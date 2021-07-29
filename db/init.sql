@@ -5,9 +5,9 @@ CREATE TABLE IF NOT EXISTS addresses (
     `id` int AUTO_INCREMENT,
     `FName` VARCHAR(20) CHARACTER SET utf8,
     `LName` VARCHAR(20) CHARACTER SET utf8,
-    `Address`  VARCHAR(50) CHARACTER SET utf8,
-    `City` VARCHAR(10) CHARACTER SET utf8,
-    `State` VARCHAR(3) CHARACTER SET utf8,
+    `Address`  VARCHAR(60) CHARACTER SET utf8,
+    `City` VARCHAR(50) CHARACTER SET utf8,
+    `State` VARCHAR(5) CHARACTER SET utf8,
     `ZipCode` int,
     PRIMARY KEY (`id`)
 );
