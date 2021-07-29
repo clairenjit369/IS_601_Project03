@@ -1,19 +1,21 @@
 CREATE DATABASE addressBook;
 use addressBook;
 
+
 CREATE TABLE IF NOT EXISTS addresses (
-    `id` int AUTO_INCREMENT,
-    `FName` VARCHAR(20) CHARACTER SET utf8,
-    `LName` VARCHAR(20) CHARACTER SET utf8,
-    `Address`  VARCHAR(60) CHARACTER SET utf8,
-    `City` VARCHAR(50) CHARACTER SET utf8,
-    `State` VARCHAR(5) CHARACTER SET utf8,
-    `ZipCode` int,
-    PRIMARY KEY (`id`)
+	`id` int AUTO_INCREMENT,
+    `Fname` VARCHAR(20) CHARACTER SET utf8,
+    `Lname` VARCHAR(20) CHARACTER SET utf8,
+    `Address` VARCHAR(50) CHARACTER SET utf8,
+    `City` VARCHAR(30) CHARACTER SET utf8,
+    `State` VARCHAR(3) CHARACTER SET utf8,
+    `ZipCode` INT,
+    primary key(`id`)
 );
+
 INSERT INTO addresses (Fname, Lname, Address, City, State, ZipCode) VALUES
     ('Isabel','Walters','380 Wilson Lane','Easton','PA', 18042),
-    ('Glen','Sanders','8849 Manhattan Street','Bloomington','IN', 47401),
+    ('Glen','Sanders','88 Manhattan Street','Bloomton','IN', 47401),
     ('Elbert','Hall','85 Pineknoll Drive','Newtown','PA', 18940),
     ('Jason','Hammond','9824 Lakeshore St.','Fleming','FL', 32003),
     ('Paul','Stewart','556 Gartner St.','Westmont','IL', 60559),
