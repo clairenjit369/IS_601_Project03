@@ -7,11 +7,12 @@ CREATE TABLE IF NOT EXISTS addresses (
     `Fname` VARCHAR(20) CHARACTER SET utf8,
     `Lname` VARCHAR(20) CHARACTER SET utf8,
     `Address` VARCHAR(50) CHARACTER SET utf8,
-    `City` VARCHAR(30) CHARACTER SET utf8,
+    `City` VARCHAR(50) CHARACTER SET utf8,
     `State` VARCHAR(3) CHARACTER SET utf8,
     `ZipCode` INT,
     primary key(`id`)
 );
+
 
 INSERT INTO addresses (Fname, Lname, Address, City, State, ZipCode) VALUES
     ('Isabel','Walters','380 Wilson Lane','Easton','PA', 18042),
