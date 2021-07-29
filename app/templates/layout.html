@@ -13,7 +13,7 @@
 <head>
  <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
-  <a class="navbar-brand" href="/">Claire {% if user %}{{ user.username }} Homepage{% else %}
+  <a class="navbar-brand" href="/">Claire's {% if user %} {{ user.username }} Homepage{% else %}
     <title>Welcome to My Homepage</title>
     {% endif %}</a>
   <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNavDropdown" data-toggle="collapse" type="button">

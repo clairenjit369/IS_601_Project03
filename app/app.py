@@ -20,7 +20,7 @@ mysql.init_app(app)
 
 @app.route('/', methods=['GET'])
 def index():
-    user = {'username': 'Address Project'}
+    user = {'username': 'Address Book Project'}
     cursor = mysql.get_db().cursor()
     cursor.execute('SELECT * FROM addresses')
     result = cursor.fetchall()
